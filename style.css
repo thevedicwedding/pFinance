@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#addExpenseBtn {
+  width: 120px;
+  align-self: center;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#addExpenseBtn:hover {
+  background-color: #45a049;
+}
+
+.expense-list ul, .top-expenses ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-list li, .top-expenses li {
+  background: #f9f9f9;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.expense-list li span, .top-expenses li span {
+  font-size: 12px;
+  color: #666;
+}
+
+.chart-container {
+  margin: 20px 0;
+}
+
+.export-import {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}

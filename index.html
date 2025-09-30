@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Finance</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Personal Finance Tracker</h1>
+    <h3 id="currentMonth"></h3>
+
+    <!-- Add Expense Form -->
+    <div class="form-container">
+      <input type="text" id="expenseName" placeholder="Expense Name">
+      <input type="number" id="expenseAmount" placeholder="Amount">
+      <select id="expenseCategory"></select>
+      <input type="text" id="customCategory" placeholder="Add Custom Category">
+      <input type="text" id="expenseNote" placeholder="Add a note (optional)">
+      <input type="number" id="expenseBudget" placeholder="Budget (optional)">
+      <button id="addExpenseBtn" onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <!-- Expense List -->
+    <div class="expense-list">
+      <h2>Expenses</h2>
+      <ul id="expenseList"></ul>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-container">
+      <canvas id="pieChart"></canvas>
+      <canvas id="lineChart"></canvas>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <h3>Weekly Average: ₹<span id="weeklyAvg">0</span></h3>
+      <h3>Monthly Average: ₹<span id="monthlyAvg">0</span></h3>
+    </div>
+
+    <!-- Top 5 Expenses -->
+    <div class="top-expenses">
+      <h3>Top 5 Expenses</h3>
+      <ul id="topExpenses"></ul>
+    </div>
+
+    <!-- Export/Import Buttons -->
+    <div class="export-import">
+      <h3>Export / Import</h3>
+      <button onclick="exportPDF()">Export PDF</button>
+      <label for="importFile">Import Back up File:</label>
+      <input type="file" id="importFile" onchange="importData(event)">
+    </div>
+
+    <button onclick="clearAll()">Clear All</button>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
